@@ -1,3 +1,5 @@
+-- NOME: Romeo Noro e Matheus Nogueira --
+
 CREATE DATABASE database_prova;
 USE database_prova;
 
