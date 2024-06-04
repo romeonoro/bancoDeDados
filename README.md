@@ -1,4 +1,4 @@
 # bancoDeDados
 MySQL Workbench
 
-[📂 .sql](AvaliaçãoCódigoMySQL.sql)
+[📂 database_prova.sql](AvaliaçãoCódigoMySQL.sql)
