@@ -22,7 +22,7 @@
 ###	🔬 Modelagem Física
 > Implementação do modelo lógico em um SGBD específico, definindo detalhes como tipos de dados, índices, estruturas de armazenamento físico, etc.
 
-###	Linguagem SQL
+###	💾 Linguagem SQL
 > Linguagem padrão para consultar e manipular bancos de dados relacionais.
 
 ###	📊 Data Definition Language (DDL)
