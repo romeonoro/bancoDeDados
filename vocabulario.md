@@ -13,7 +13,7 @@
 
 
 ###	🧩 Modelagem Conceitual
-> Processo de representar os requisitos e as entidades principais de um sistema de informação de forma abstrata e independente de qualquer implementação técnica específica. É uma etapa crucial no desenvolvimento de sistemas de informação, pois visa capturar e definir as entidades de negócio, seus relacionamentos e as regras de negócio subjacentes.
+> Processo de representar os requisitos e as entidades principais de um sistema de informação de forma abstrata e independente de qualquer implementação técnica específica. Visa capturar e definir as entidades de negócio, seus relacionamentos e as regras de negócio subjacentes.
  
  
 ###	🧠 Modelagem Lógica
