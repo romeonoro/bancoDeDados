@@ -1,8 +1,8 @@
 # 🎲 Trabalho Final de Projeto de Banco de Dados
 
-## 1️⃣ Significado das expressões abaixo
+## 1️⃣ Significado das expressões 
 
-###	SGBD
+###	🌐 SGBD
 > Sistema Gerenciador de Banco de Dados é um software projetado para permitir a criação, manipulação e administração de bancos de dados. Esses sistemas são essenciais para organizar grandes quantidades de dados de forma eficiente e segura, fornecendo uma interface entre usuários e o próprio banco de dados.
 
 ###	🔒 Restrições em Banco de Dados
@@ -12,54 +12,60 @@
 > É um modelo de dados utilizado para organizar informações em bancos de dados de forma estruturada e relacionada.
 
 
-###	🌐 Modelagem Conceitual
+###	🧩 Modelagem Conceitual
 > Processo de representar os requisitos e as entidades principais de um sistema de informação de forma abstrata e independente de qualquer implementação técnica específica. É uma etapa crucial no desenvolvimento de sistemas de informação, pois visa capturar e definir as entidades de negócio, seus relacionamentos e as regras de negócio subjacentes.
  
  
-###	Modelagem Lógica
+###	🧠 Modelagem Lógica
 > Transformação do modelo conceitual em um modelo de dados específico para um SGBD, considerando os detalhes de implementação.
 
-###	Modelagem Física
+###	🔬 Modelagem Física
 > Implementação do modelo lógico em um SGBD específico, definindo detalhes como tipos de dados, índices, estruturas de armazenamento físico, etc.
 
 ###	Linguagem SQL
 > Linguagem padrão para consultar e manipular bancos de dados relacionais.
 
-###	Data Definition Language (DDL)
+###	📊 Data Definition Language (DDL)
 > Parte da SQL que permite definir e modificar a estrutura de objetos em um banco de dados, como tabelas e índices.
 
-###	Data Manipulation Language (DML)
+###	🛠️ Data Manipulation Language (DML)
 > Parte da SQL usada para manipular os dados dentro de objetos do banco de dados, como inserir, atualizar, deletar registros.
 
-###	Boas práticas em modelagem de banco de dados
->
+###	🗃️ Boas práticas em modelagem de banco de dados
+> *Siga princípios de normalização para reduzir a redundância de dados e garantir consistência.*
+> *Defina corretamente chaves primárias e estrangeiras para garantir integridade referencial e facilitar a junção de tabelas.*
+> *Escolha tipos de dados apropriados para cada coluna para otimizar o espaço de armazenamento e melhorar o desempenho das consultas.*
+> *Considere particionar grandes tabelas em partes menores físicas ou lógicas para melhorar o desempenho de consultas.*
+> *Evite ter muitas colunas largas em uma tabela, especialmente se não forem frequentemente utilizadas, pois isso pode afetar o desempenho geral.*
+> *Projete o banco de dados considerando o crescimento futuro de dados e tráfego, garantindo que a estrutura seja escalável.*
 
 
 ## 2️⃣ Responda as questões
 
-# Todos os clientes armazenados no sistema:
-	SELECT * FROM cliente;	
+### Todos os clientes armazenados no sistema:
+	
+ 	SELECT * FROM cliente;	
 
-# Exiba os veículos que tenham final 3 no número da placa.
+### Exiba os veículos que tenham final 3 no número da placa.
 	SELECT * FROM veiculo WHERE placa LIKE '%3';
 
-# Mostre os clientes que residem no RS e que não possuam telefone.
+### Mostre os clientes que residem no RS e que não possuam telefone.
 	SELECT * FROM cliente WHERE uf_cnh = 'RS' AND telefone IS NULL;
 
-# Exiba o código dos clientes que alugaram veículos por mais de 90 dias.
+### Exiba o código dos clientes que alugaram veículos por mais de 90 dias.
 	SELECT id_cliente FROM contrato_aluguel WHERE duracao > 90;
 
-# Quantos veículos há cadastrados no sistema.
+### Quantos veículos há cadastrados no sistema.
 	SELECT COUNT(*) AS total_veiculos FROM veiculo;
  
-# Mostre o veículo alugado por Alexandre Zamberlan.
+### Mostre o veículo alugado por Alexandre Zamberlan.
 	SELECT v.* 
 	FROM veiculo v
 	JOIN contrato_aluguel ca ON v.id_veiculo = ca.id_veiculo
 	JOIN cliente c ON ca.id_cliente = c.id_cliente
 	WHERE c.nome = 'Alexandre Zamberlan';
 
-# Mostre os clientes e os escritórios associados no contrato de aluguel.
+### Mostre os clientes e os escritórios associados no contrato de aluguel.
 	SELECT c.nome AS cliente, e.nome AS escritorio
 	FROM contrato_aluguel ca
 	JOIN cliente c ON ca.id_cliente = c.id_cliente
