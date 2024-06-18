@@ -32,12 +32,12 @@
 > Parte da SQL usada para manipular os dados dentro de objetos do banco de dados, como inserir, atualizar, deletar registros.
 
 ###	🗃️ Boas práticas em modelagem de banco de dados
-> *Siga princípios de normalização para reduzir a redundância de dados e garantir consistência.*
-> *Defina corretamente chaves primárias e estrangeiras para garantir integridade referencial e facilitar a junção de tabelas.*
-> *Escolha tipos de dados apropriados para cada coluna para otimizar o espaço de armazenamento e melhorar o desempenho das consultas.*
-> *Considere particionar grandes tabelas em partes menores físicas ou lógicas para melhorar o desempenho de consultas.*
-> *Evite ter muitas colunas largas em uma tabela, especialmente se não forem frequentemente utilizadas, pois isso pode afetar o desempenho geral.*
-> *Projete o banco de dados considerando o crescimento futuro de dados e tráfego, garantindo que a estrutura seja escalável.*
+> *Seguir princípios de normalização para reduzir a redundância de dados e garantir consistência.*
+> *Definir corretamente chaves primárias e estrangeiras para garantir integridade referencial e facilitar a junção de tabelas.*
+> *Escolher tipos de dados apropriados para cada coluna para otimizar o espaço de armazenamento e melhorar o desempenho das consultas.*
+> *Considerar particionar grandes tabelas em partes menores físicas ou lógicas para melhorar o desempenho de consultas.*
+> *Evitar ter muitas colunas largas em uma tabela, especialmente se não forem frequentemente utilizadas, pois isso pode afetar o desempenho geral.*
+> *Projetar o banco de dados considerando o crescimento futuro de dados e tráfego, garantindo que a estrutura seja escalável.*
 
 
 ## 2️⃣ Responda as questões
